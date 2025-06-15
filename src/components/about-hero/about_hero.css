@@ -1,0 +1,50 @@
+.about-hero p {
+  margin: 0;
+  padding: 0;
+}
+
+.about-hero .text-center {
+  font-family: 'Rethink Sans', sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 145%;
+  text-align: center;
+  color: #0A351F;
+}
+
+.about-hero-text {
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+}
+
+.VeilDigits-lets-you {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.with-anonymous-calling {
+  display: flex;
+  align-items: center;
+}
+
+.big-star {
+  width: 98px;
+  height: 98px;
+  display: block;
+}
+
+.star-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.small-star {
+  width: 63px;
+  height: 63px;
+  display: block;
+}

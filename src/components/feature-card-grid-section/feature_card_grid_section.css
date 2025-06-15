@@ -1,0 +1,67 @@
+.main{
+    width: 100%;
+    min-height: 3,797px;
+    
+}
+.feature-card-grid-section{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    height: 759px;
+    padding: 80px 78px 80px 78px;
+    /* background-color: red; */
+}
+.image-display{
+    display: flex;
+    gap: 72px;
+    height: 599px;
+}
+.row-reverse{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.feature-text{
+    display: flex;
+    flex-direction: column;
+    height: 269px;
+    gap: 20px;
+}
+.top-feature{
+    width: 552px;
+    height: 16px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    color: #4B5563;
+}
+.describe-the-feature{
+    width: 552px;
+    height: 106px;
+    font-family: 'Rethink Sans', sans-serif;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 110.0%;
+    color: #111827;
+}
+.a-paragraph-text{
+    width: 550px;
+    height: 50px;
+    font-family: 'Rethink Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    color: #4B5563;
+}
+.iphone-15{
+    padding: 104px 55px 0px 55px;
+    height: 514px;
+    width: 100%;
+    border-radius: 20px;
+    background-color: #75B895;
+    text-align: center;
+}
+.features-iphone{
+    width: 303px;
+}
+

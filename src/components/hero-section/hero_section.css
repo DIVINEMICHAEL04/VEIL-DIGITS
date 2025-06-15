@@ -1,0 +1,165 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.hero-section{
+  background: linear-gradient(to bottom, #FFFFFF, #6DB48F, #3A8E63);
+  width: 100%;
+  height: 831px;
+}
+.section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+.top-heroSection{
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+  padding: 47px 0px 0px 0px;
+}
+.announcing-product-launch{
+  border-radius: 10px;
+  padding: 10px 24px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  background-color: #e6f2de1f;
+}
+.hero-text{
+  display: flex;
+  height: 58px;
+  border-radius: 10px;
+  padding: 10px 24px;
+  background-color: #E6F2DE;
+  filter: blur(72); 
+  margin: 0;
+ 
+}
+.users-profile-img{
+  width: 128px;
+  height: 38px;
+}
+.announcing-product-launch .text{
+  font-family: 'Figtree', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #232620;
+}
+.veil-your-digits{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.veil-heading{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+}
+.heading-texts{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 52px;
+  line-height: 120%;
+  letter-spacing: -2%;
+  text-align: center;
+  color: #0F281B;
+  margin-bottom: 0;
+}
+.Powerful-self-serve-product{
+  font-family: 'Rethink Sans', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #0A351F;
+}
+.mobile-app-store{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+.google-play{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.googlePlayLogo{
+    width: 23.09px;
+    height: 25.72px;
+}
+.google-play, .app-store{
+    width: 120px;
+    height: 40px;
+    border: 1px#A6A6A6;
+    border-radius: 7px;
+    background-color: #000000;
+    color: #FFFFFF;
+    cursor: pointer;
+
+}
+.app-store{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .3rem;
+}
+.app-store{
+   font-family: 'Figtree', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+    display: flex;
+    gap: 7px;
+    border: 1px solid #000;
+    border-radius: 7px;
+
+}
+.appleLogo{
+  color: #FFFFFF;
+  width: 17.72px;
+  height: 21.78px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+.app-store-text{
+  font-family: 'Figtree', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  padding-top: 5px;
+}
+ .download-on-the,
+.app-store-download {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-size: 12px; 
+}
+ .download-on-the{
+   font-size: x-small;
+ }
+ .app-store-download{
+  font-family: 'Figtree', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #FFFFFF;
+ }
+ .hero-img{
+  display: flex;
+  justify-content: center;
+ }

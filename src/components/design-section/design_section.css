@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.design-section{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    background-color: blue;
+    background: #014220;
+    min-height: 761px;
+    height: auto;
+    padding: 80px 78px 80px 78px;
+}
+.linear-background{
+    display: flex;
+    gap: 72px;
+    height: 601px;
+}
+.design-text{
+    display: flex;
+    flex-direction: column;
+    height: 269px;
+    gap: 20px;
+}
+.other-features{
+    width: 552px;
+    height: 16px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    color: #4B5563;
+}
+.describe-features{
+    width: 552px;
+    height: 106px;
+    font-family: 'Rethink Sans', sans-serif;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 110.0%;
+    color: #111827;
+}
+.a-paragraph-text-that{
+    width: 550px;
+    height: 50px;
+    font-family: 'Rethink Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    color: #4B5563;
+}
+.iphone-15{
+    width: 100%;
+    height: 601px;
+}
+.two-phones{
+    width: 100%;
+    height: 601px;
+}

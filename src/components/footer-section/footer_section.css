@@ -1,0 +1,149 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.footer-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 80px;
+    background: linear-gradient(to bottom, #014220, #000000);
+    width: 100%;
+    height: 505px;
+    border-top: 1px solid #E4E4E7;
+    padding: 80px 120px 80px 120px;
+}
+.footer-section-intro-text{
+    display: flex;
+    height: 177px;
+    justify-content: space-between;
+}
+.footer-text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.veil-logo{
+    display: flex;
+    width: 160.99px;
+    height: 24px;
+    gap: 12px;
+}
+.veil-digits-logo{
+    width: 39.75px;
+    height: 25px;
+}
+.veil-digits{
+    width: 109.25px;
+    height: 23.29px;
+    color: #FFFFFF;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+
+}
+.short-paragraph{
+    width: 400px;
+    height: 50px;
+    font-family: 'Rethink Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    color: #FFFFFF;
+}
+.about-veildigits{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    height: 177px;
+}
+.about-us-text{
+    display: flex;
+    flex-direction: column;
+    width: 99px;
+    height: 177px;
+    gap: 30px;
+}
+.company-quick-links{
+    display: flex;
+    flex-direction: column;
+    width: 99px;
+    height: 177px;
+    gap: 28px;
+}
+.about-us{
+    width: 75px;
+    height: 18px;
+    font-family: 'Rethink Sans', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 110.00%;
+    letter-spacing: 0%;
+    color: #FFFFFF;
+}
+.about-offers{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 15px;
+}
+.blog{
+    width: 32px;
+}
+.Contact{
+    width: 60px;
+}
+.legal-docs{
+    width: 85px;
+}
+.cookie-policy{
+    width: 98px;
+}
+.about-offers ul{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    list-style: none;
+}
+.about-offers .footer-link{
+    font-family: 'Rethink Sans', sans-serif;
+    height: 21px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    cursor: pointer;
+    color: #F3F4F6;
+    text-decoration: none;
+}
+.right-resevered{
+    height: 88px;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0px 30px 0px;
+    border-top: 1px solid #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
+}
+.copyright p{
+    font-family: 'Rethink Sans', sans-serif;
+    width: 226px;
+    height: 17px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    color: #FFFFFF;
+}
+.quick-links{
+    display: flex;
+    gap: 30px;
+    width: 318px;
+    height: 28px;
+}
+.quick-links img{
+    cursor: pointer;
+    width: 28px;
+    height: 28px;
+}
