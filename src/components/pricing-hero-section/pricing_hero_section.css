@@ -419,6 +419,9 @@
   .pricing-arrow {
     margin: 0 auto;
   }
+  .free-plan{
+    margin: 0 auto;
+  }
 }
 
 @media screen and (max-width: 500px) {

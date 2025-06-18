@@ -12,15 +12,15 @@ function HeroSection({ title, description, showMobileStore = true }) {
         <div className="top-heroSection">
           {/* Product launch announcement */}
            <div className="announcing-product-launch auto">
-             <div className="hero-paragraph">
-               <div className="announcing-product-launch users-profile">
-                 <img className="users-prof-img" src={userProfile} alt="users-profile" />
-               </div>
-               <div className="announcing-product-launch text">
-                 <p>Announcing our latest product launch</p>
-               </div>
-             </div>
-           </div>
+              <div className="hero-paragraph">
+                <div className="announcing-product-launch users-profile">
+                  <img className="users-prof-img" src={userProfile} alt="users-profile" />
+                </div>
+                <div className="announcing-product-launch text">
+                  <p>Announcing our latest product launch</p>
+                </div>
+              </div>
+            </div>
 
           {/* Title and description */}
           <div className="veil-heading">

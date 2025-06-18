@@ -9,6 +9,7 @@ body {
   box-sizing: border-box;
 }
 
+
 .header {
   width: 100%;
   height: auto;
@@ -177,7 +178,7 @@ ul {
   }
 
   .veil-digit {
-    font-size: 12px;
+    font-size: 18px;
   }
 
   .quick-links {
@@ -186,7 +187,7 @@ ul {
   }
 
   .vd-logo {
-    width: 28.61px;
+    width: 30.61px;
     height: 18px;
   }
 
