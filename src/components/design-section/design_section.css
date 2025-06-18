@@ -6,56 +6,270 @@
 .design-section{
     width: 100%;
     display: flex;
+    flex-direction: column;
     gap: 10px;
-    background-color: blue;
     background: #014220;
-    min-height: 761px;
     height: auto;
     padding: 80px 78px 80px 78px;
 }
-.linear-background{
+.green-background{
     display: flex;
+    justify-content: center;
     gap: 72px;
-    height: 601px;
+    height: auto;
 }
 .design-text{
     display: flex;
     flex-direction: column;
+    height: 389px;
+    width: 467px;
+    justify-content: space-between;
+}
+.design-text-top{
+    display: flex;
+    flex-direction: column;
     height: 269px;
+    width: 467px;
     gap: 20px;
 }
 .other-features{
-    width: 552px;
-    height: 16px;
+    width: 467px;
+    height: 21px;
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 100%;
-    color: #4B5563;
+    letter-spacing: 0%;
+    color: #AFD9C3;
 }
-.describe-features{
-    width: 552px;
+.you{
+    width: 467px;
     height: 106px;
     font-family: 'Rethink Sans', sans-serif;
     font-weight: 600;
-    font-size: 48px;
+    font-size: 45px;
     line-height: 110.0%;
-    color: #111827;
+    color: #FFFFFF;
 }
-.a-paragraph-text-that{
-    width: 550px;
-    height: 50px;
+.that{
+    width: 467px;
+    height: 102px;
     font-family: 'Rethink Sans', sans-serif;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 24px;
     line-height: 140%;
+    letter-spacing: 0%;
+    color: #FFFFFF;
+}
+.arrow{
+    display: flex;
+    width: 119px;
+    height: 48px;
+    gap: 23px;
+}
+.arrow-right{
+    width: 48px;
+    height: 48px;
+    border-radius: 100px;
+}
+.feature-iphone-15 {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    overflow-x: auto; 
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    border-radius: 20px;
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
+    max-width: 745px;
+}
+
+.feature-iphone-15::-webkit-scrollbar {
+    display: none; 
+}
+
+.first-layout {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0; 
+    width: 609px;
+    height: 601px;
+    border-radius: 20px;
+}
+
+.first-layout-img{
+    background-color: #75B895;
+    width: 609px;
+    height: 425px;
+    border-radius: 20px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.star-feature{
+    display: flex;
+    flex-direction: column;
+    width: 609px;
+    height: 176px;
+    padding: 30px 40px 30px 40px;
+    gap: 25px;
+    border-radius: 20px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    background-color: #FFFFFF;
+}
+.star{
+    display: flex;
+    align-items: center;
+    max-width: 529px;
+    height: 44px;
+    gap: 10px;
+}
+.star p{
+    width: 475px;
+    height: 31px;
+    font-family: 'Rethink Sans', sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 110.0%;
+    letter-spacing: 0%;
+    color: #374151;
+}
+.help-the-customer{
+    width: 529px;
+    height: 62px;
+    font-family: 'Rethink Sans', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 140%;
+    letter-spacing: 0%;
     color: #4B5563;
 }
-.iphone-15{
-    width: 100%;
-    height: 601px;
+.layout-half-pro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
 }
-.two-phones{
+.mobile-screen{
+    display: none;
+}
+
+@media screen and (max-width: 1024px){
+  .design-section {
+    padding: 40px 24px;
+  }
+
+  .green-background {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    height: 601px;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .design-text {
+    width: 100%;
+    height: auto;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .design-text-top {
+    width: 100%;
+    height: auto;
+    gap: 16px;
+  }
+
+  .other-features,
+  .you,
+  .that {
+    width: 100%;
+    height: auto;
+  }
+
+  .you {
+    font-size: 32px;
+    line-height: 1.3;
+  }
+
+  .that {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  .mobile-screen {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 16px;
+  }
+
+  .feature-iphone-15 {
+    max-width: 100%;
+    gap: 16px;
+    padding: 0 12px;
+  }
+
+  .first-layout {
+    width: 90vw;
+    height: auto;
+  }
+
+  .first-layout-img {
+    width: 100%;
+    height: auto;
+    padding: 0px 12px 0px 12px;
+  }
+
+  .star-feature {
+    width: 100%;
+    padding: 24px;
+    height: auto;
+  }
+
+  .star {
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .star p {
+    font-size: 22px;
+    width: 100%;
+  }
+
+  .help-the-customer {
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .features-iphone {
+    width: 60%;
+    max-width: 250px;
+  }
+
+  .layout-half-pro {
+    padding-top: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+    .half-pro{
+        width: 100%;
+        max-width: 245px;
+
+    }
+    .star p{
+        font-size: 16px
+    }
+    .help-the-customer-text{
+        font-size: 12px;
+    }
 }

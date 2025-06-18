@@ -1,61 +1,91 @@
-body{
+:root {
   --button-color: #014220;
   --font-color: #6B7280;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+}
 
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-.header{
-    border-bottom: 1px solid #E5E7EB;
-    padding: 12px 78px;
-    gap: 10px;
-    display: flex;
-    color: #ffffff;
-}
-.nav-bar{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    height: 64px;
-}
-.quick-links{
-    display: flex;
-    align-items: center;
-    width: 632.99px;
-    height: 25px;
-    gap: 94px;
-}
-.logo{
-    display: flex;
-    gap: 12px;
-}
-.veil-digit{
-    color: var(--button-color);
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 24px;
-    width: 109.25px;
-}
-ul{
-    display: flex;
-    gap: 48px;
-    list-style: none;
-    text-decoration: none;
-}
-.href{
-    text-decoration: none;
-    color: var(--font-color);
-    font-family: 'Raleway', sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-    cursor: pointer;
 
+.header {
+  width: 100%;
+  height: auto;
+  display: flex;
+  gap: 10px;
+  padding: 12px 78px;
+  border-bottom: 1px solid #E5E7EB;
+  color: #ffffff;
 }
-.nav-links li:active{
-    color: var(--button-color);
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 64px;
 }
+
+.menu-icon,
+.close-icon {
+  display: none;
+}
+
+.menu,
+.Download {
+  width: 24px;
+  height: 24px;
+}
+
+.quick-links {
+  display: flex;
+  align-items: center;
+  gap: 94px;
+  width: 632.99px;
+  height: 25px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.vd-logo {
+  width: 32px;
+  height: 32px;
+}
+
+.veil-digit {
+  color: var(--button-color);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  width: 109.25px;
+}
+
+ul {
+  display: flex;
+  gap: 48px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.href {
+  text-decoration: none;
+  color: var(--font-color);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.nav-links li:active {
+  color: var(--button-color);
+}
+
 .download-btn {
   padding: 11px 24px;
   background-color: var(--button-color);
@@ -64,11 +94,126 @@ ul{
   border-radius: 10px;
   cursor: pointer;
   display: flex;
+  align-items: center;
   gap: 8px;
-  text-align: center;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 16px;
   letter-spacing: 0.3px;
   line-height: 150%;
+}
+
+.Download {
+  display: none;
+}
+
+/* ----------------- Responsive Styles ----------------- */
+
+@media screen and (max-width: 984px) {
+  .download-btn {
+    padding: 8.5px 12px;
+  }
+}
+
+@media screen and (max-width: 786px) {
+  .header {
+    flex-direction: column;
+    height: 70px;
+    justify-content: center;
+    padding: 9px 5px;
+    border: 1px solid #E5E7EB;
+  }
+
+  .nav-bar {
+    height: 46px;
+  }
+
+  .logo {
+    justify-content: center;
+    gap: 8.64px;
+    margin: 0 auto;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .nav-links-slide {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100vh;
+    background-color: white;
+    flex-direction: column;
+    padding: 20px;
+    transition: left 0.3s ease-in-out;
+    z-index: 1000;
+    box-shadow: 2px 0 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .nav-links-slide.open {
+    left: 0;
+  }
+
+  .nav-links-slide ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .nav-links-slide li {
+    font-size: 18px;
+  }
+
+  .nav-links-slide a {
+    color: var(--font-color);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+  }
+
+  .menu-icon {
+    display: flex;
+  }
+
+  .veil-digit {
+    font-size: 12px;
+  }
+
+  .quick-links {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .vd-logo {
+    width: 28.61px;
+    height: 18px;
+  }
+
+  .download-btn p {
+    display: none;
+  }
+
+  .Download {
+    display: block;
+  }
+
+  .download-btn {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+  .close-icon {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+    padding: 20px;
+    cursor: pointer;
+  }
+
+  .close-icon img {
+    width: 24px;
+    height: 24px;
+  }
 }

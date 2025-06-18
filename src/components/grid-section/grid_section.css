@@ -1,20 +1,18 @@
 .main{
     width: 100%;
     min-height: 3,797px;
-    
 }
 .feature-card-grid-section{
     display: flex;
     flex-direction: column;
     gap: 80px;
-    height: 759px;
+    height: auto;
     padding: 80px 78px 80px 78px;
-    /* background-color: red; */
 }
 .image-display{
     display: flex;
     gap: 72px;
-    height: 599px;
+    height: auto;
 }
 .row-reverse{
     display: flex;
@@ -64,4 +62,72 @@
 .features-iphone{
     width: 303px;
 }
+/* Responsive styles */
+@media screen and (max-width: 1024px) {
+  .feature-card-grid-section {
+    padding: 40px 24px;
+    gap: 64px;
+  }
+
+  .image-display {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .row,
+  .row-reverse {
+    flex-direction: column !important; 
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .feature-text {
+    width: 100%;
+    height: auto;
+    gap: 16px;
+  }
+
+  .top-feature,
+  .describe-the-feature,
+  .a-paragraph-text {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .describe-the-feature {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+
+  .a-paragraph-text {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .iphone-15 {
+    height: auto;
+    width: 100%;
+    background-color: #75B895;
+    border-radius: 20px;
+  }
+
+  .features-iphone {
+    width: 240px;
+    max-width: 80%;
+  }
+}
+@media screen and (max-width: 768px) {
+    .iphone-15{
+        padding: 25px 25px 0px 25px;
+        width: 100%;
+    }
+    .features-iphone{
+        width: 100%;
+    }
+}
+
 

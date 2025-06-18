@@ -44,9 +44,41 @@
     color: #4B5563;
 }
 .call-to-action-section-img{
+    display: flex;
+    justify-content: center;
     width: 100%;
+}
+.call-to-action-section-img img{
+    width: 100%;
+}
+.phone1, .phone3{
+  margin-top: 2rem;
+}
+.phone5{
+    margin-top: 1rem;
 }
 .mobile-display{
     width: 100%;
     height: auto;
+}
+@media screen and (max-width: 1024px) {
+    .call-to-action-section{
+        padding: 40px 0px 60px 0px;
+        gap: 40px;
+    }
+    .phone1, .phone5{
+        display: none;
+    }
+    .call-to-action-section-text{
+        gap: 16.13px;
+    }
+    .call-to-action-section-download{
+        gap: 8.06px;
+    }
+    .download-the-app{
+        font-size: 30px;
+    }
+    .visit-your-app-store{
+       font-size: 14px;
+    }
 }

@@ -8,10 +8,11 @@
     flex-direction: column;
     gap: 200px;
     width: 100%;
-    height: 974px;
+    height: auto;
     padding: 96px 0px 96px 78px;
     background-color: #0F281B;
 }
+
 .build-something-great{
     display: flex;
     flex-direction: column;
@@ -19,7 +20,8 @@
     height: 158px;
 }
 .launch-faster{
-    width: 768px;
+    width: 100%;
+    max-width: 768px;
     height: 24px;
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
@@ -29,7 +31,8 @@
 
 }
 .stats-header{
-    width: 768px;
+    width: 100%;
+    max-width: 768px;
     height: 42px;
     font-family: 'Rethink Sans', sans-serif;
     font-weight: 500;
@@ -39,7 +42,8 @@
     color: #FFFFFF;
 }
 .everything-you-need{
-    width: 768px;
+    width: 100%;
+    max-width: 768px;
     height: 60px;
     font-family: 'Rethink Sans', sans-serif;
     font-weight: 400;
@@ -50,18 +54,20 @@
 }
 .stats-achievement{
     display: flex;
+    justify-content: space-between;
+    padding: 0px 20px 0px 20px;
     gap: 96px;
     width: 100%;
-    height: 560px;
+    height: auto;
 }
 .stats-achievement-text{
     display: flex;
     flex-direction: column;
     flex: 1;
-    width: 592px;
+    width: 100%;
+    max-width: 592px;
     height: 376px;
     gap: 64px;
-
 }
 .stats-achievement-top-text{
     display: flex;
@@ -72,12 +78,14 @@
 .global-downloads{
     display: flex;
     flex-direction: column;
-    width: 280px;
+    width: 100%;
+    max-width: 280px;
     height: 156px;
     gap: 12px;
 }
 .fourty-thousand{
-    width: 280px;
+    width: 100%;
+    max-width: 280px;
     height: 60px;
     font-family: 'Rethink Sans', sans-serif;
     font-weight: 500;
@@ -88,7 +96,8 @@
     text-align: center;
 }
 .global-downloads-para{
-    width: 280px;
+    width: 100%;
+    max-width: 280px;
     height: 28px;
     font-family: 'Rethink Sans', sans-serif;
     font-weight: 500;
@@ -99,7 +108,8 @@
     color: #FFFFFF;
 }
 .global-text{
-    width: 280px;
+    width: 100%;
+    max-width: 280px;
     height: 48px;
     font-family: 'Rethink Sans', sans-serif;
     font-weight: 400;
@@ -112,4 +122,90 @@
 .earpiece{
     width: 100%;
     height: 90%;
+}
+  /* Responsive styles */
+@media screen and (max-width: 1024px) {
+    .stats-section{
+        display: flex;
+        flex-direction: column;
+        padding: 48px 20px 48px 20px;
+        gap: 64px;
+    }
+    .build-something-great{
+        display: flex;
+        gap: 10.63px;
+    }
+    .stats-header{
+        font-size: 24px;
+    }
+    .everything-you-need{
+        font-size: 14px;
+    }
+    .mobile-break {
+        display: none !important;
+    }
+    .stats-achievement{
+        display: flex;
+        flex-direction: column;
+        gap: 35.92px;
+    }
+    .stats-achievement-text{
+        display: flex;
+        gap: 23.95px;
+    }
+    .stats-achievement-top-text{
+        display: flex;
+        width: 100%;
+        gap: 12px;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .global-downloads{
+        width: auto;
+        gap: 8px;
+    }
+    .fourty-thousand{
+        font-size: 14px;
+    }
+    .global-downloads-para{
+        font-size: 10px;
+    }
+    .global-text{
+        font-family: none;
+        font-size: 8px;
+    }
+    .stats-achievement-img{
+        width: 100%;
+    }
+    .earpiece{
+        height: auto;
+    }
+    
+}
+@media screen and(max-width: 375px){
+    .stats-section{
+        padding: 0px !important;
+    }
+    .build-something-great{
+        width: 100%;
+
+    }
+    .everything-you-need{
+        display: flex;
+        flex-wrap: wrap !important;
+        width: 100% !important;
+        font-size: 7px;
+    }
+    .stats-achievement-text{
+        display: flex;
+        gap: 13.95px;
+        flex-wrap: wrap;
+    }
+    .stats-achievement-top-text{
+        display: flex;
+        width: 100%;
+        gap: 0px;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
 }

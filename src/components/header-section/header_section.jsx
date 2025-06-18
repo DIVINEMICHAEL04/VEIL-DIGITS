@@ -1,43 +1,51 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import './header_section.css'; 
-import logo from '../../assets/logo.png'; 
-function HeaderSection (){
-    return (
-   <header className="header">
-    <nav className="nav-bar">
+import './header_section.css';
+import logo from '../../assets/logo.png';
+import DownloadIcon from '../../assets/Download.png';
+import menuIcon from '../../assets/menu.png';
+import closeIcon from '../../assets/cancel.png';
 
-        {/*  */}
+function HeaderSection() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => setIsMenuOpen(prev => !prev);
+
+  return (
+    <header className="header">
+      <nav className="nav-bar">
+
         <div className="quick-links">
-        <div className="logo">
-            <div className="logo-img">
-                <img src={logo} alt="Logo" />
-            </div>
-            <div className="veil-digit">VeilDigits</div>
-        </div>
-        {/* end of logo */}
+          <div className="menu-icon" onClick={toggleMenu}>
+            <img className="menu" src={menuIcon} alt="Menu" />
+          </div>
 
-        {/*  */}
-        <div className="nav-links">
-            <ul>
-                <li> <Link className='href' to="/">Home </Link></li>
-                <li> <Link className='href' to="/feature">Feature </Link></li>
-                <li> <Link className='href' to="">Business </Link></li>
-                <li> <Link className='href' to="/pricing">Pricing </Link></li>
-            </ul>
+          <div className="logo">
+            <img className="vd-logo" src={logo} alt="Logo" />
+            <span className="veil-digit">VeilDigits</span>
+          </div>
         </div>
-        </div>
-        {/* end of nav-links */}
 
-        {/*  */}
+        <div className={`nav-links-slide ${isMenuOpen ? 'open' : ''}`}>
+          <div className="close-icon" onClick={toggleMenu}>
+            <img src={closeIcon} alt="Close menu" />
+          </div>
+          <ul>
+            <li><Link className="href" to="/" onClick={toggleMenu}>Home</Link></li>
+            <li><Link className="href" to="/feature" onClick={toggleMenu}>Feature</Link></li>
+            <li><Link className="href" to="#" onClick={toggleMenu}>Business</Link></li>
+            <li><Link className="href" to="/pricing" onClick={toggleMenu}>Pricing</Link></li>
+          </ul>
+        </div>
+
         <button className="download-btn">
-            Download
+          <p>Download</p>
+          <img className="Download" src={DownloadIcon} alt="Download icon" />
         </button>
-        {/* end of download-btn*/}
-
-
-    </nav>
-   </header>
-    )
+        
+      </nav>
+    </header>
+  );
 }
+
 export default HeaderSection;

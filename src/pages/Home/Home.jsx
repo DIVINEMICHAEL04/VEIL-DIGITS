@@ -12,9 +12,9 @@ function Home() {
     <div className="App">
        <HeaderSection/>
        <HeroSection 
-       title={<>Veil your Digits, make calls and <br /> send sms securely</>} 
-       description={<>Powerful, self-serve product and growth <br />
-               analytics to help you convert, engage, and retain more.</>}
+       title={<>Veil your Digits, make calls and <br className='mobile-break' /> send sms securely</>} 
+       description={<>Powerful, self-serve product and growth <br className='mobile-break'/>
+               analytics to help you convert, engage, and retain <br className='desktop-break' /> more.</>}
        />
        <AboutHeroSection/>
        <FeaturesGridSection/>
