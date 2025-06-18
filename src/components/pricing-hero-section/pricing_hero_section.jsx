@@ -54,7 +54,7 @@ function PricingHeroSection() {
 
           <div className="subscription-section feature-iphone-16" ref={scrollRef}>
             {/* Free Plan */}
-            <div className="free-plan hide">
+            <div className="free-plan">
               <div className="sub-free-plan">
                 <div className="free-plan-top-section">
                   <div className="top-sub-section">
@@ -102,9 +102,17 @@ function PricingHeroSection() {
                 <div className="sub-free-plan">
                   <div className="free-plan-top-section">
                     <div className="top-sub-section">
+                      <div className="premium-choices">
                       <div className="Premium-btn white-button">
                         <p className="Organisation black-text">Premium</p>
                       </div>
+                    <div className="subscription hide">
+                      <div className="subscription-type">
+                        <div className="monthly-subscription">Monthly</div>
+                        <div className="anual-subscription">Anually</div>
+                      </div>
+                    </div>
+                  </div>
                       <p className="For-occasional white-text">
                         For power users who want complete control <br />
                         over their identity.
@@ -136,7 +144,7 @@ function PricingHeroSection() {
             </div>
 
             {/* Organisation Plan */}
-            <div className="free-plan hide">
+            <div className="free-plan">
               <div className="sub-free-plan">
                 <div className="free-plan-top-section">
                   <div className="top-sub-section">

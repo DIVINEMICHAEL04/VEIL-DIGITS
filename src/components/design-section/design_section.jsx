@@ -23,11 +23,11 @@ function DesignSection() {
         <div className="design-text">
           <div className="design-text-top">
             <p className="other-features">Other Features</p>
-            <h1 className="you">
+            <h1 className="describe-the-feature you">
               Describe the feature <br />
               you want to highlight
             </h1>
-            <p className="that">
+            <p className="a-paragraph-text that">
               A paragraph text that goes more in depth <br />
               about how the feature can help the <br />
               customer save time and resources.

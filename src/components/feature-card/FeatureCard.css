@@ -334,3 +334,15 @@ span {
     margin: 0 auto;
   }
 }
+@media screen and (max-width: 375px) {
+  .hero-paragraph{
+    padding: 0 !important;
+    gap: 0px;
+  }
+  .users-profile, .text{
+    padding: 0px;
+  }
+  .auto {
+    margin: 0 auto;
+  }
+}
