@@ -33,7 +33,6 @@ body {
   display: none;
 }
 
-.menu,
 .Download {
   width: 24px;
   height: 24px;
@@ -102,7 +101,10 @@ ul {
   letter-spacing: 0.3px;
   line-height: 150%;
 }
-
+.menu{
+  width: 30px !important;
+  height: 30px !important;
+}
 .Download {
   display: none;
 }
