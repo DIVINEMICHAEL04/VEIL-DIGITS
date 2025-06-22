@@ -60,7 +60,8 @@
     text-align: center;
 }
 .features-iphone{
-    width: 303px;
+    width: 100%;
+    max-width: 303px;
 }
 /* Responsive styles */
 @media screen and (max-width: 1024px) {

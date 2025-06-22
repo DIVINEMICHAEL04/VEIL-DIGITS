@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 .design-section{
+  overflow: hidden;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -105,6 +106,7 @@
     border-radius: 20px;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
+    overflow: hidden;
 }
 .star-feature{
     display: flex;
