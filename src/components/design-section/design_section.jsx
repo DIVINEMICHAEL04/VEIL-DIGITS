@@ -5,13 +5,31 @@ import arrowLeft from "../../assets/arrow-left.png";
 import phoneStar from "../../assets/phone-star.png";
 import halfPro from "../../assets/iPhone 15 Pro half.png";
 
+const featureData = [
+  {
+    title: "Quick ID Switch",
+    description: "Toggle between permanent and temporary caller IDs instantly before each call or message.",
+  },
+  {
+    title: "Voicemail Drop",
+    description: "Send a pre-recorded voicemail without the phone ringing at the other end.",
+  },
+  {
+    title: "Call Reminders",
+    description: "Set call reminders directly in the app so you never forget to follow up.",
+  },
+  {
+    title: "Caller ID Shield",
+    description: "Your real number stays hidden, no matter who you call or how often.",
+  },
+];
+
 function DesignSection() {
   const scrollRef = useRef();
 
-  // Handle horizontal scroll for feature cards
   const scroll = (direction) => {
     if (scrollRef.current) {
-      const scrollAmount = direction === "right" ? 320 : -320;
+      const scrollAmount = direction === "right" ? 620 : -620;
       scrollRef.current.scrollBy({ left: scrollAmount, behavior: "smooth" });
     }
   };
@@ -27,8 +45,8 @@ function DesignSection() {
               We offer more, much more to the mix.
             </h1>
             <p className="a-paragraph-text that">
-              You loose nothing when you use VeilDigits, <br className="mobile-break"/>
-               with all the functionalities of regular call <br className="mobile-break"/> apps still in our product.
+              You lose nothing when you use VeilDigits, <br className="mobile-break" />
+              with all the functionalities of regular call <br className="mobile-break" /> apps still in our product.
             </p>
           </div>
 
@@ -45,7 +63,7 @@ function DesignSection() {
 
         {/* Feature cards carousel */}
         <div className="feature-iphone-15" ref={scrollRef}>
-          {[1, 2, 3, 4].map((_, index) => (
+          {featureData.map((feature, index) => (
             <div className="first-layout" key={index}>
               <div className="first-layout-img">
                 <div className="layout-half-pro">
@@ -55,12 +73,11 @@ function DesignSection() {
               <div className="star-feature">
                 <div className="star">
                   <img src={phoneStar} alt="star-icon" />
-                  <p>Quick ID Switch {index + "hhh"}</p>
+                  <p>{feature.title}</p>
                 </div>
                 <div className="help-the-customer">
                   <p className="help-the-customer-text">
-                    Toggle between permanent and temporary caller <br className="mobile-break"/>
-                    IDs instantly before each call or message.
+                    {feature.description}
                   </p>
                 </div>
               </div>

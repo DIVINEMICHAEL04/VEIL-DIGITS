@@ -8,6 +8,26 @@ import halfPro from "../../assets/iPhone 15 Pro half.png";
 function BusinessDesign() {
   const scrollRef = useRef();
 
+  // Feature data with unique titles and descriptions
+  const featureData = [
+    {
+      title: "Caller ID Shield",
+      description: "Your real number stays hidden, no matter who you call or how often.",
+    },
+    {
+      title: "Voicemail Drop",
+      description: "Send a pre-recorded voicemail without the phone ringing at the other end.",
+    },
+    {
+      title: "Call Reminders",
+      description: "Set call reminders directly in the app so you never forget to follow up.",
+    },
+    {
+      title: "Number Masking",
+      description: "Mask your number during calls for an extra layer of privacy and control.",
+    },
+  ];
+
   // Handle horizontal scroll for feature cards
   const scroll = (direction) => {
     if (scrollRef.current) {
@@ -24,13 +44,11 @@ function BusinessDesign() {
           <div className="design-text-top">
             <p className="other-features">Other Features</p>
             <h1 className="describe-the-feature you">
-              Describe the feature <br className="mobile-break"/>
-              you want to highlight
+              We offer more, much more to the mix.
             </h1>
             <p className="a-paragraph-text that">
-              A paragraph text that goes more in depth <br className="mobile-break"/>
-              about how the feature can help the <br className="mobile-break"/>
-              customer save time and resources.
+              You lose nothing when you use VeilDigits,
+              with all the functionalities of regular call apps still in our product.
             </p>
           </div>
 
@@ -47,7 +65,7 @@ function BusinessDesign() {
 
         {/* Feature cards carousel */}
         <div className="feature-iphone-15 phone-reverse" ref={scrollRef}>
-          {[1, 2, 3, 4].map((_, index) => (
+          {featureData.map((feature, index) => (
             <div className="first-layout" key={index}>
               <div className="first-layout-img">
                 <div className="layout-half-pro">
@@ -57,12 +75,11 @@ function BusinessDesign() {
               <div className="star-feature">
                 <div className="star">
                   <img src={phoneStar} alt="star-icon" />
-                  <p>Feature {index + 1}</p>
+                  <p>{feature.title}</p>
                 </div>
                 <div className="help-the-customer">
                   <p className="help-the-customer-text">
-                    A paragraph text that goes more in depth about how <br />
-                    the feature can help the customer.
+                    {feature.description}
                   </p>
                 </div>
               </div>
