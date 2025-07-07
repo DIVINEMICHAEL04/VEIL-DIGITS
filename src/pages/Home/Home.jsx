@@ -16,7 +16,11 @@ function Home() {
        description={<>Powerful, self-serve product and growth <br className='mobile-break'/>
                analytics to help you convert, engage, and retain <br className='desktop-break' /> more.</>}
        />
-       <AboutHeroSection/>
+       <AboutHeroSection 
+       heading={<>With anonymous calling and secure messaging, VeilDigits lets you <br className="mobile-break" />
+                communicate freely, protect your privacy, and stay connected with
+</>} 
+        info={<>confidence, no matter where life takes you.</>}/>
        <FeaturesGridSection/>
        <StatsSection/>
        <CallToActionSection/>

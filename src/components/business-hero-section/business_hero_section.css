@@ -1,0 +1,14 @@
+.business-hero-frame-left,
+.business-hero-frame-right-top {
+    display: none;
+}
+
+.sub-hero-frame {
+    padding: 30px 40px;
+}
+
+@media screen and (max-width: 500px) {
+    .sub-hero-frame {
+        padding: 20px 20px;
+    }
+}

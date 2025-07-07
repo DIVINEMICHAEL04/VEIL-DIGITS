@@ -6,7 +6,7 @@
 }
 
 .hero-section {
-  background: linear-gradient(to bottom, #FFFFFF, #3A8E63, #6DB48F);
+  background: linear-gradient(to bottom, #FFFFFF 35%, #3A8E63, #6DB48F);
   width: 100%;
   height: 831px;
 }

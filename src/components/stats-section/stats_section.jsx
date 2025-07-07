@@ -22,7 +22,7 @@ function StatsSection() {
               <h2 className="fourty-thousand">40,000+</h2>
               <p className="global-downloads-para">Global downloads</p>
               <p className="global-text">
-                Our app has been downloaded over <br /> 40,000+ times.
+                Our app has been downloaded over 40,000+ times.
               </p>
             </div>
 
@@ -30,7 +30,7 @@ function StatsSection() {
               <h2 className="fourty-thousand">39,000+</h2>
               <p className="global-downloads-para">Accounts created</p>
               <p className="global-text">
-                Our customers have reported an <br /> average of ~600% ROI.
+                Our customers have reported an average of ~600% ROI.
               </p>
             </div>
           </div>
@@ -40,7 +40,7 @@ function StatsSection() {
               <h2 className="fourty-thousand">10K</h2>
               <p className="global-downloads-para">Global downloads</p>
               <p className="global-text">
-                Our free UI kit has been downloaded <br /> over 10k times.
+                Our free UI kit has been downloaded over 10k times.
               </p>
             </div>
 
@@ -48,7 +48,7 @@ function StatsSection() {
               <h2 className="fourty-thousand">32,000+</h2>
               <p className="global-downloads-para">5-star reviews</p>
               <p className="global-text">
-                We’re proud of our 5-star rating with <br /> over 200 reviews.
+                We’re proud of our 5-star rating with over 200 reviews.
               </p>
             </div>
           </div>

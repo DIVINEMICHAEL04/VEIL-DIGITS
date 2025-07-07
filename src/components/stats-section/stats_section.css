@@ -1,25 +1,28 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-.stats-section{
+
+.stats-section {
     display: flex;
     flex-direction: column;
-    gap: 200px;
+    gap: 64px;
     width: 100%;
     height: auto;
     padding: 96px 0px 96px 78px;
     background-color: #0F281B;
 }
 
-.build-something-great{
+.build-something-great {
     display: flex;
     flex-direction: column;
-    gap: 48px;
+    gap: 20px;
     height: 158px;
+    width: 100%;
 }
-.launch-faster{
+
+.launch-faster {
     width: 100%;
     max-width: 768px;
     height: 24px;
@@ -28,9 +31,9 @@
     font-size: 16px;
     line-height: 24px;
     color: #EAECF0;
-
 }
-.stats-header{
+
+.stats-header {
     width: 100%;
     max-width: 768px;
     height: 42px;
@@ -41,7 +44,8 @@
     letter-spacing: -2%;
     color: #FFFFFF;
 }
-.everything-you-need{
+
+.everything-you-need {
     width: 100%;
     max-width: 768px;
     height: 60px;
@@ -52,7 +56,8 @@
     letter-spacing: 0%;
     color: #EAECF0;
 }
-.stats-achievement{
+
+.stats-achievement {
     display: flex;
     justify-content: space-between;
     padding: 0px 20px 0px 20px;
@@ -60,22 +65,25 @@
     width: 100%;
     height: auto;
 }
-.stats-achievement-text{
+
+.stats-achievement-text {
     display: flex;
     flex-direction: column;
     flex: 1;
     width: 100%;
     max-width: 592px;
-    height: 376px;
+    height: auto;
     gap: 64px;
 }
-.stats-achievement-top-text{
+
+.stats-achievement-top-text {
     display: flex;
     gap: 32px;
     width: 100%;
-    height: 156px;
+    height: auto;
 }
-.global-downloads{
+
+.global-downloads {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -83,7 +91,8 @@
     height: 156px;
     gap: 12px;
 }
-.fourty-thousand{
+
+.fourty-thousand {
     width: 100%;
     max-width: 280px;
     height: 60px;
@@ -95,8 +104,11 @@
     color: #FFFFFF;
     text-align: center;
 }
-.global-downloads-para{
+
+.global-downloads-para {
     width: 100%;
+    display: flex;
+    justify-content: center;
     max-width: 280px;
     height: 28px;
     font-family: 'Rethink Sans', sans-serif;
@@ -106,8 +118,11 @@
     letter-spacing: 0%;
     text-align: center;
     color: #FFFFFF;
+    text-wrap: wrap !important;
+    flex-wrap: wrap !important;
 }
-.global-text{
+
+.global-text {
     width: 100%;
     max-width: 280px;
     height: 48px;
@@ -118,94 +133,113 @@
     letter-spacing: 0%;
     color: #EAECF0;
     text-align: center;
+    /* text-wrap: wrap; */
 }
-.earpiece{
+
+.earpiece {
     width: 100%;
     height: 90%;
 }
-  /* Responsive styles */
+
+
+/* Responsive styles */
+
 @media screen and (max-width: 1024px) {
-    .stats-section{
+    .stats-section {
         display: flex;
-        flex-direction: column;
         padding: 48px 20px 48px 20px;
         gap: 64px;
     }
-    .build-something-great{
+    .build-something-great {
         display: flex;
         gap: 10.63px;
     }
-    .stats-header{
+    .stats-header {
         font-size: 24px;
     }
-    .everything-you-need{
+    .everything-you-need {
         font-size: 14px;
     }
     .mobile-break {
         display: none !important;
     }
-    .stats-achievement{
+    .stats-achievement {
         display: flex;
         flex-direction: column;
         gap: 35.92px;
     }
-    .stats-achievement-text{
+    .stats-achievement-text {
         display: flex;
         gap: 23.95px;
     }
-    .stats-achievement-top-text{
+    .stats-achievement-top-text {
         display: flex;
         width: 100%;
         gap: 12px;
         flex-wrap: wrap;
-        flex-direction: column;
     }
-    .global-downloads{
+    .global-downloads {
         width: auto;
         gap: 8px;
     }
-    .fourty-thousand{
+    .fourty-thousand {
         font-size: 14px;
     }
-    .global-downloads-para{
+    .global-downloads-para {
         font-size: 10px;
     }
-    .global-text{
-        font-family: none;
-        font-size: 8px;
+    .global-text {
+        width: 100%;
+        max-width: 280px;
+        font-family: 'Rethink Sans', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #EAECF0;
+        text-align: center;
+        overflow-wrap: break-word;
+        white-space: normal;
     }
-    .stats-achievement-img{
+    .stats-achievement-img {
         width: 100%;
     }
-    .earpiece{
+    .earpiece {
         height: auto;
     }
-    
 }
-@media screen and(max-width: 375px){
-    .stats-section{
-        padding: 0px !important;
-    }
-    .build-something-great{
-        width: 100%;
 
+@media screen and (max-width: 400px) {
+    .build-something-great {
+        width: 100%;
     }
-    .everything-you-need{
+    .everything-you-need {
         display: flex;
         flex-wrap: wrap !important;
         width: 100% !important;
-        font-size: 7px;
+        font-size: 13px;
     }
-    .stats-achievement-text{
+    .stats-achievement-text {
         display: flex;
         gap: 13.95px;
         flex-wrap: wrap;
+        text-wrap: wrap !important;
     }
-    .stats-achievement-top-text{
+    .stats-achievement-top-text {
         display: flex;
+        flex-wrap: wrap !important;
+        flex-direction: column !important;
+    }
+    .global-downloads-para {
+        text-wrap: wrap;
+        font-size: 13px;
+    }
+    .global-text {
+        font-size: 15px;
+        line-height: 16px;
+        overflow-wrap: break-word;
+        white-space: normal;
         width: 100%;
-        gap: 0px;
-        flex-wrap: wrap;
-        flex-direction: column;
+        max-width: 100%;
+        text-align: center;
     }
 }

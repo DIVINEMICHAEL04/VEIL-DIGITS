@@ -7,7 +7,7 @@
 
 /* Feature Card Styling */
 .feature-card {
-  background: linear-gradient(to bottom, #FFFFFF, #6DB48F, #3A8E63);
+  background: linear-gradient(to bottom, #FFFFFF 30%, #3A8E63, #6DB48F);
   width: 100%;
   height: auto;
 }

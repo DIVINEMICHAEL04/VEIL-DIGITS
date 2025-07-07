@@ -23,6 +23,7 @@
     flex-direction: column;
     height: 269px;
     gap: 20px;
+    padding-top: 1rem;
 }
 .top-feature{
     width: 552px;

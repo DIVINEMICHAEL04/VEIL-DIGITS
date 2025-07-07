@@ -1,34 +1,36 @@
 import React, { useRef } from "react";
-import "./design_section.css";
-import arrowRight from "../../assets/arrows-right.png";
-import arrowLeft from "../../assets/arrow-left.png";
+import "./business_design_section.css";
+import arrowRight from "../../assets/design-right-arrow.png";
+import arrowLeft from "../../assets/design-left-arrow.png";
 import phoneStar from "../../assets/phone-star.png";
 import halfPro from "../../assets/iPhone 15 Pro half.png";
 
-function DesignSection() {
+function BusinessDesign() {
   const scrollRef = useRef();
 
   // Handle horizontal scroll for feature cards
   const scroll = (direction) => {
     if (scrollRef.current) {
-      const scrollAmount = direction === "right" ? 320 : -320;
+      const scrollAmount = direction === "left" ? -680 : 680;
       scrollRef.current.scrollBy({ left: scrollAmount, behavior: "smooth" });
     }
   };
 
   return (
-    <div className="design-section">
-      <div className="green-background">
+    <div className="design-section section-background">
+      <div className="green-background design-background">
         {/* Text content */}
         <div className="design-text">
           <div className="design-text-top">
             <p className="other-features">Other Features</p>
             <h1 className="describe-the-feature you">
-              We offer more, much more to the mix.
+              Describe the feature <br className="mobile-break"/>
+              you want to highlight
             </h1>
             <p className="a-paragraph-text that">
-              You loose nothing when you use VeilDigits, <br className="mobile-break"/>
-               with all the functionalities of regular call <br className="mobile-break"/> apps still in our product.
+              A paragraph text that goes more in depth <br className="mobile-break"/>
+              about how the feature can help the <br className="mobile-break"/>
+              customer save time and resources.
             </p>
           </div>
 
@@ -44,7 +46,7 @@ function DesignSection() {
         </div>
 
         {/* Feature cards carousel */}
-        <div className="feature-iphone-15" ref={scrollRef}>
+        <div className="feature-iphone-15 phone-reverse" ref={scrollRef}>
           {[1, 2, 3, 4].map((_, index) => (
             <div className="first-layout" key={index}>
               <div className="first-layout-img">
@@ -55,12 +57,12 @@ function DesignSection() {
               <div className="star-feature">
                 <div className="star">
                   <img src={phoneStar} alt="star-icon" />
-                  <p>Quick ID Switch {index + "hhh"}</p>
+                  <p>Feature {index + 1}</p>
                 </div>
                 <div className="help-the-customer">
                   <p className="help-the-customer-text">
-                    Toggle between permanent and temporary caller <br className="mobile-break"/>
-                    IDs instantly before each call or message.
+                    A paragraph text that goes more in depth about how <br />
+                    the feature can help the customer.
                   </p>
                 </div>
               </div>
@@ -82,4 +84,4 @@ function DesignSection() {
   );
 }
 
-export default DesignSection;
+export default BusinessDesign;

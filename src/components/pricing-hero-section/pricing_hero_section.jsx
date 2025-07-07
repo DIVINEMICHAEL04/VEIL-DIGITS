@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import "./pricing_hero_section.css";
 import userProfile from '../../assets/userProfile.png';
 import tickSquare from '../../assets/tick-square.png';
@@ -8,6 +8,8 @@ import arrowLeft from "../../assets/arrow-left.png";
 
 function PricingHeroSection() {
   const scrollRef = useRef();
+  const cardRefs = useRef([]);
+  const [activeIndex, setActiveIndex] = useState(0);
 
   const scroll = (direction) => {
     if (scrollRef.current) {
@@ -16,10 +18,35 @@ function PricingHeroSection() {
     }
   };
 
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry, i) => {
+          if (entry.isIntersecting) {
+            setActiveIndex(i);
+          }
+        });
+      },
+      {
+        root: scrollRef.current,
+        threshold: 0.6,
+      }
+    );
+
+    cardRefs.current.forEach((card) => {
+      if (card) observer.observe(card);
+    });
+
+    return () => {
+      cardRefs.current.forEach((card) => {
+        if (card) observer.unobserve(card);
+      });
+    };
+  }, []);
+
   return (
     <div className="pricing-card">
       <section className="pricing-section">
-
         {/* Top hero content */}
         <div className="hero-top-section">
           <div className="announcing-product-launch auto">
@@ -37,7 +64,7 @@ function PricingHeroSection() {
             <p className="veil-your-digits-heading-texts">Pricing</p>
             <p className="Powerful-self-serve-product">
               Stay anonymous while making calls and sending messages.
-              Whether you're a casual user <br />
+              Whether you're a casual user <br className="mobile-break"/>
               or need advanced privacy features, we’ve got you covered.
             </p>
           </div>
@@ -54,7 +81,7 @@ function PricingHeroSection() {
 
           <div className="subscription-section feature-iphone-16" ref={scrollRef}>
             {/* Free Plan */}
-            <div className="free-plan">
+            <div className="free-plan first-free-plan m-t" ref={(el) => (cardRefs.current[0] = el)}>
               <div className="sub-free-plan">
                 <div className="free-plan-top-section">
                   <div className="top-sub-section">
@@ -90,7 +117,7 @@ function PricingHeroSection() {
             </div>
 
             {/* Premium Plan */}
-            <div className="premium-plan-best-deal">
+            <div className="premium-plan-best-deal premium-plan" ref={(el) => (cardRefs.current[1] = el)}>
               <div className="best-deal-icon">
                 <div className="best-deal">
                   <img src={arrowDown} alt="arrow-down" />
@@ -103,16 +130,16 @@ function PricingHeroSection() {
                   <div className="free-plan-top-section">
                     <div className="top-sub-section">
                       <div className="premium-choices">
-                      <div className="Premium-btn white-button">
-                        <p className="Organisation black-text">Premium</p>
+                        <div className="Premium-btn white-button">
+                          <p className="Organisation black-text">Premium</p>
+                        </div>
+                        <div className="subscription hide">
+                          <div className="subscription-type">
+                            <div className="monthly-subscription">Monthly</div>
+                            <div className="anual-subscription">Anually</div>
+                          </div>
+                        </div>
                       </div>
-                    <div className="subscription hide">
-                      <div className="subscription-type">
-                        <div className="monthly-subscription">Monthly</div>
-                        <div className="anual-subscription">Anually</div>
-                      </div>
-                    </div>
-                  </div>
                       <p className="For-occasional white-text">
                         For power users who want complete control <br />
                         over their identity.
@@ -144,7 +171,7 @@ function PricingHeroSection() {
             </div>
 
             {/* Organisation Plan */}
-            <div className="free-plan">
+            <div className="free-plan organisation-plan m-t" ref={(el) => (cardRefs.current[2] = el)}>
               <div className="sub-free-plan">
                 <div className="free-plan-top-section">
                   <div className="top-sub-section">
@@ -181,17 +208,29 @@ function PricingHeroSection() {
             </div>
           </div>
 
-          {/* Navigation arrows */}
-          <div className="arrow pricing-arrow">
-            <div className="arrow-right" onClick={() => scroll("left")}>
-              <img className="arrow-icon left" src={arrowLeft} alt="arrow-left" />
+          {/* Indicator and navigation arrows */}
+          <div className="arrow arrow-indicator">
+            <div className="indicator">
+              {[0, 1, 2].map((_, i) => (
+                <div
+                  key={i}
+                  className="white-indicator"
+                  style={{
+                    backgroundColor: i === activeIndex ? "#014220" : "#FFFFFF",
+                  }}
+                />
+              ))}
             </div>
-            <div className="arrow-right" onClick={() => scroll("right")}>
-              <img className="arrow-icon" src={arrowRight} alt="arrow-right" />
+            <div className="pricing-arrow">
+              <div className="arrow-right" onClick={() => scroll("left")}>
+                <img className="arrow-icon left" src={arrowLeft} alt="arrow-left" />
+              </div>
+              <div className="arrow-right" onClick={() => scroll("right")}>
+                <img className="arrow-icon" src={arrowRight} alt="arrow-right" />
+              </div>
             </div>
           </div>
         </div>
-
       </section>
     </div>
   );

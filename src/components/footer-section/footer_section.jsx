@@ -9,6 +9,8 @@ import youtube from '../../assets/youtube-icon.png';
 import linkedIn from '../../assets/linkedIn-icon.png';
 import tiktok from '../../assets/tiktok-icon.png';
 import VeilDigitsLogo from '../../assets/vd-logo.png';
+import googlePlay from '../../assets/Google Play logo.png';
+import appleLogo from '../../assets/Apple logo.png';
 
 function FooterSection() {
   return (
@@ -22,8 +24,8 @@ function FooterSection() {
           </div>
           <div className="short-paragraph">
             <p>
-              Write a short paragraph that explains what your <br />
-              company helps customers with.
+              Powerful, self-serve product and growth <br className='mobile-break'/>
+              analytics to help you convert, engage, and <br className='mobile-break'/> retain more.
             </p>
           </div>
         </div>
@@ -35,22 +37,37 @@ function FooterSection() {
             <h4 className="about-us">About Us</h4>
             <ul className="about-offers">
               <li><Link className="footer-link" to="/">Blog</Link></li>
-              <li><Link className="footer-link" to="#">Contact</Link></li>
-              <li><Link className="footer-link" to="#">Legal Docs</Link></li>
-              <li><Link className="footer-link" to="#">Cookie Policy</Link></li>
+              <li><Link className="footer-link" to="#">Contact Us</Link></li>
+              <li><Link className="footer-link" to="#">Privacy Policy</Link></li>
             </ul>
           </div>
 
-          {/* Company Links */}
-          <div className="about-us-text company-quick-links">
-            <h4 className="about-us">Company</h4>
-            <ul className="about-offers">
-              <li><Link className="footer-link" to="/">Our Story</Link></li>
-              <li><Link className="footer-link" to="#">Careers</Link></li>
-              <li><Link className="footer-link" to="#">Press</Link></li>
-              <li><Link className="footer-link" to="#">Company</Link></li>
-            </ul>
+          <div className="app-download">
+          <div className="mobile-app-store footer-mobile-app-store">
+            {/* Google Play Store Button */}
+            <div className="google-play">
+              <div className="google-icon">
+                <img className="googlePlayLogo" src={googlePlay} alt="Google Play logo" />
+              </div>
+              <div className="app-store-text">
+                <p className="download-on-the">GET IT ON</p>
+                <p className="app-store-download">Google Play</p>
+              </div>
+            </div>
+
+            {/* Apple Store Button */}
+            <div className="app-store">
+              <div className="apple-icon">
+                <img className="appleLogo" src={appleLogo} alt="Apple App Store logo" />
+              </div>
+              <div className="app-store-text">
+                <p className="download-on-the">Download on the</p>
+                <p className="app-store-download">App Store</p>
+              </div>
+            </div>
           </div>
+        </div>
+        
         </div>
       </div>
 

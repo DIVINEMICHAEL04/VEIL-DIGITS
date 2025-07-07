@@ -4,7 +4,7 @@ import './about_hero.css';
 import bigStar from '../../assets/Star 9.png';
 import smallStar from '../../assets/Star 10.png';
 
-function AboutHeroSection() {
+function AboutHeroSection({heading, info}) {
   return (
     <div className="about-hero">
       <div className="star-div">
@@ -18,9 +18,7 @@ function AboutHeroSection() {
             </div>
 
             <div className="with-anonymous-calling">
-              <p className="center-text">
-                With anonymous calling and secure messaging, VeilDigits lets you <br className="mobile-break" />
-                communicate freely, protect your privacy, and stay connected with
+              <p className="center-text">{heading}
               </p>
             </div>
 
@@ -33,7 +31,7 @@ function AboutHeroSection() {
           {/* Bottom row: Small stars and closing text */}
           <div className="star-text">
             <img className="small-star" src={smallStar} alt="Small decorative star" />
-            <p className="center-text">confidence, no matter where life takes you.</p>
+            <p className="center-text">{info}</p>
             <img className="small-star" src={smallStar} alt="Small decorative star" />
           </div>
 

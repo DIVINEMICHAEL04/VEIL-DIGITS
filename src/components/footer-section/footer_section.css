@@ -1,183 +1,208 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .footer-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 80px;
-  width: 100%;
-  height: 505px;
-  padding: 80px 120px;
-  background: linear-gradient(to bottom, #014220, #000000);
-  border-top: 1px solid #E4E4E7;
+    display: flex;
+    flex-direction: column!important;
+    justify-content: center;
+    gap: 95px;
+    width: 100%;
+    height: 505px;
+    padding: 80px 120px;
+    background: linear-gradient(to bottom, #014220, #000000);
+    border-top: 1px solid #E4E4E7;
 }
 
 .footer-section-intro-text {
-  display: flex;
-  justify-content: space-between;
-  height: 177px;
+    display: flex;
+    justify-content: space-between;
+    height: 177px;
 }
 
 .footer-text {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .veil-logo {
-  display: flex;
-  width: 161px;
-  height: 24px;
-  gap: 12px;
+    display: flex;
+    width: 161px;
+    height: 24px;
+    gap: 12px;
 }
 
 .veil-digits-logo {
-  width: 40px;
-  height: 25px;
+    width: 40px;
+    height: 25px;
 }
 
 .veil-digits {
-  width: 109px;
-  height: 23px;
-  font-family: 'Raleway', sans-serif;
-  font-size: 24px;
-  font-weight: 700;
-  color: #fff;
+    width: 109px;
+    height: 23px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
 }
 
 .short-paragraph {
-  width: 400px;
-  height: 50px;
-  font-family: 'Rethink Sans', sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 140%;
-  color: #fff;
+    width: 400px;
+    height: 50px;
+    font-family: 'Rethink Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 140%;
+    color: #fff;
 }
 
 .about-veildigits {
-  display: flex;
-  justify-content: space-between;
-  width: 300px;
-  height: 177px;
+    display: flex;
+    height: 177px;
+    gap: 6rem;
 }
 
 .about-us-text,
 .company-quick-links {
-  display: flex;
-  flex-direction: column;
-  width: 99px;
-  gap: 28px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 28px;
 }
 
 .about-us-text {
-  gap: 30px;
+    gap: 30px;
 }
 
 .about-us {
-  font-family: 'Rethink Sans', sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 110%;
-  color: #fff;
+    font-family: 'Rethink Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 110%;
+    color: #fff;
 }
 
 .about-offers {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .about-offers ul {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  list-style: none;
-  padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
 }
 
 .footer-link {
-  font-family: 'Rethink Sans', sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 100%;
-  color: #f3f4f6;
-  text-decoration: none;
-  cursor: pointer;
+    font-family: 'Rethink Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 100%;
+    color: #f3f4f6;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .right-resevered {
-  display: flex;
-  justify-content: space-between;
-  padding: 30px 0;
-  border-top: 1px solid #fff;
-  border-bottom: 1px solid #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
 }
 
 .copyright p {
-  font-family: 'Rethink Sans', sans-serif;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 140%;
-  color: #fff;
-  width: 226px;
+    font-family: 'Rethink Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 140%;
+    color: #fff;
+    width: 226px;
 }
 
 .quick-links {
-  display: flex;
-  gap: 30px;
-  width: 318px;
-  height: 28px;
+    display: flex;
+    gap: 30px;
+    width: 318px;
+    height: 28px;
 }
 
 .quick-links img {
-  width: 28px;
-  height: 28px;
-  cursor: pointer;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
 }
 
+.footer-mobile-app-store {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+
 /* Responsive styles */
+
+@media screen and (max-width: 1025px) {
+    .footer-section-intro-text {
+        gap: 30px;
+    }
+    .footer-mobile-app-store {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+    .about-veildigits {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
 @media screen and (max-width: 768px) {
-  .footer-section {
-    gap: 180px;
-    padding: 40px 20px;
-  }
+    .footer-section {
+        gap: 180px;
+        padding: 40px 20px;
+    }
+    .footer-section-intro-text {
+        flex-direction: column;
+        gap: 37.2px;
+    }
+    .short-paragraph {
+        width: 100%;
+        font-size: 14px;
+    }
+    .about-veildigits {
+        width: 100%;
+        justify-content: space-around;
+    }
+    .right-resevered {
+        flex-direction: column;
+        gap: 18px;
+        text-align: center;
+        padding: 14px 0 10px;
+        border-top: 0.47px solid #fff;
+        border-bottom: 0.47px solid #fff;
+    }
+    .quick-links {
+        width: 100%;
+        gap: 10px !important;
+    }
+    .quick-links img {
+        width: 20px;
+        height: 20px;
+    }
+}
 
-  .footer-section-intro-text {
-    flex-direction: column;
-    gap: 37.2px;
-  }
-
-  .short-paragraph {
-    width: 100%;
-    font-size: 14px;
-  }
-
-  .about-veildigits {
-    width: 100%;
-    justify-content: space-around;
-  }
-
-  .right-resevered {
-    flex-direction: column;
-    gap: 18px;
-    text-align: center;
-    padding: 14px 0 10px;
-    border-top: 0.47px solid #fff;
-    border-bottom: 0.47px solid #fff;
-  }
-
-  .quick-links {
-    width: 100%;
-    gap: 10px !important;
-  }
-
-  .quick-links img {
-    width: 20px;
-    height: 20px;
-  }
+@media screen and (max-width: 450px) {
+    .about-veildigits {
+        width: 100%;
+        gap: 10px;
+    }
 }

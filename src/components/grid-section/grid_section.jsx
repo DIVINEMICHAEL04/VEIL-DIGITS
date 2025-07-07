@@ -24,8 +24,8 @@ function GridSection() {
                 Describe the feature <br /> you want to highlight
               </h1>
               <p className="a-paragraph-text">
-                A paragraph text that goes more in depth about how <br className="mobile-break" />
-                the feature can help the customer save time and <br className="mobile-break" />
+                A paragraph text that goes more in depth about how 
+                the feature can help the customer save time and 
                 resources.
               </p>
             </div>
