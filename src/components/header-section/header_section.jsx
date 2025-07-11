@@ -35,11 +35,11 @@ function HeaderSection() {
               <img src={closeIcon} alt="Close menu" />
             </div>
             <ul>
-              <li><Link className={`href ${getActiveClass('/')}`} to="/" onClick={toggleMenu}>Home</Link></li>
-              <li><Link className={`href ${getActiveClass('/feature')}`} to="/feature" onClick={toggleMenu}>Feature</Link></li>
-              <li><Link className={`href ${getActiveClass('/About')}`} to="/About" onClick={toggleMenu}>About Us</Link></li>
-              <li><Link className={`href ${getActiveClass('/business')}`} to="/business" onClick={toggleMenu}>Business</Link></li>
-              <li><Link className={`href ${getActiveClass('/pricing')}`} to="/pricing" onClick={toggleMenu}>Pricing</Link></li>
+              <li><Link className={`href ${getActiveClass('/')}`} to="/" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Home</Link></li>
+              <li><Link className={`href ${getActiveClass('/feature')}`} to="/feature" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Feature</Link></li>
+              <li><Link className={`href ${getActiveClass('/About')}`} to="/About" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>About Us</Link></li>
+              <li><Link className={`href ${getActiveClass('/business')}`} to="/business"  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Business</Link></li>
+              <li><Link className={`href ${getActiveClass('/pricing')}`} to="/pricing"  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Pricing</Link></li>
             </ul>
           </div>
 

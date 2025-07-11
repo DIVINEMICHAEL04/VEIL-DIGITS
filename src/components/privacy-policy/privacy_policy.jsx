@@ -7,7 +7,7 @@ function PrivacyPolicy(){
         <div className="privacy-policy-section about-bg-img privacy-img">
             <div className="contact-us-container bg-overlay">
               <div className='about-veildigits contact-veildigits'>
-            <p className='about-veildigits-heading'>privacy Policy</p>
+            <p className='about-veildigits-heading'>Privacy Policy</p>
             <p className='about-veildigits-first-paragraph'>
               Your Privacy Comes First.
               At VeilDigits, we’re committed to protecting your privacy. 

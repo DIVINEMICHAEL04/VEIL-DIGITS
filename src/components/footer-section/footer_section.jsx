@@ -37,9 +37,9 @@ function FooterSection() {
             <h4 className="about-us">About Us</h4>
             
             <ul className="about-offers">
-              <li><Link className="footer-link" to="/">Blog</Link></li>
-              <li><Link className="footer-link" to="/Contact">Contact Us</Link></li>
-              <li><Link className="footer-link" to="/Privacy">Privacy Policy</Link></li>
+              <li><Link className="footer-link" to="/" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Blog</Link></li>
+              <li><Link className="footer-link" to="/Contact" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Contact Us</Link></li>
+              <li><Link className="footer-link" to="/Privacy" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Privacy Policy</Link></li>
             </ul>
           </div>
 

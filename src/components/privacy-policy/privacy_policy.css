@@ -10,16 +10,13 @@
 }
 
 @media screen and (max-width: 768px) {
-    .privacy-img {
-        height: 55vh;
-    }
     .contact-veildigits {
-        padding-top: 15rem;
+        padding: 256px 28px;
     }
 }
 
 @media screen and (max-width: 440px) {
     .contact-veildigits {
-        gap: 90px;
+        gap: 20px;
     }
 }
