@@ -1,5 +1,5 @@
 .about-bg-img {
-    margin-top: 80px;
+    margin-top: 60px;
     background-image: url('../../assets/about-us-img.jpg');
     background-size: cover;
     background-position: center;
@@ -33,7 +33,6 @@
     align-items: center;
     justify-content: center;
     gap: 20px;
-    /* // TODO: remove height for better alignment */
     width: 100%;
 }
 
@@ -64,7 +63,7 @@
 
 @media screen and (max-width: 1024px) {
     .about-bg-img {
-        height: 60vh;
+        height: 90vh;
     }
 }
 
