@@ -73,8 +73,9 @@ ul {
     display: flex;
     gap: 48px;
     list-style: none;
-    padding: 0;
+    padding-top: 7px;
     margin: 0;
+    align-items: center;
 }
 
 .href {
@@ -169,6 +170,7 @@ ul {
     .nav-links-slide ul {
         flex-direction: column;
         gap: 20px;
+        align-items: start;
     }
     .nav-links-slide li {
         font-size: 18px;

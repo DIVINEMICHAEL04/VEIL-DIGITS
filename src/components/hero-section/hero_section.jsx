@@ -11,7 +11,7 @@ function HeroSection({ title, description, showMobileStore = true }) {
       <section className="section">
         <div className="top-heroSection">
           {/* Product launch announcement */}
-           <div className="announcing-product-launch auto">
+           <div className="announcing-product-launch auto launched">
               <div className="hero-paragraph">
                 <div className="announcing-product-launch users-profile">
                   <img className="users-prof-img" src={userProfile} alt="users-profile" />

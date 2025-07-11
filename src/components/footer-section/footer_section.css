@@ -59,10 +59,10 @@
     color: #fff;
 }
 
-.about-veildigits {
+.about-veildigitss {
     display: flex;
     height: 177px;
-    gap: 6rem;
+    gap: 4.5rem;
 }
 
 .about-us-text,
@@ -89,6 +89,7 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
+    align-items: start !important;
 }
 
 .about-offers ul {
@@ -181,6 +182,7 @@
     .about-veildigits {
         width: 100%;
         justify-content: space-around;
+        gap: 3rem;
     }
     .right-resevered {
         flex-direction: column;

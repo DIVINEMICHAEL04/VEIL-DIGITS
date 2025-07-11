@@ -37,6 +37,7 @@ function HeaderSection() {
             <ul>
               <li><Link className={`href ${getActiveClass('/')}`} to="/" onClick={toggleMenu}>Home</Link></li>
               <li><Link className={`href ${getActiveClass('/feature')}`} to="/feature" onClick={toggleMenu}>Feature</Link></li>
+              <li><Link className={`href ${getActiveClass('/About')}`} to="/About" onClick={toggleMenu}>About Us</Link></li>
               <li><Link className={`href ${getActiveClass('/business')}`} to="/business" onClick={toggleMenu}>Business</Link></li>
               <li><Link className={`href ${getActiveClass('/pricing')}`} to="/pricing" onClick={toggleMenu}>Pricing</Link></li>
             </ul>

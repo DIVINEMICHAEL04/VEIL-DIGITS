@@ -1,0 +1,25 @@
+.privacy-img {
+    background-image: url('../../assets/privacy-image.jpg');
+}
+
+.contact-veildigits {
+    display: flex;
+    flex-direction: column;
+    padding: 186px 78px;
+    gap: 60px;
+}
+
+@media screen and (max-width: 768px) {
+    .privacy-img {
+        height: 55vh;
+    }
+    .contact-veildigits {
+        padding-top: 15rem;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .contact-veildigits {
+        gap: 90px;
+    }
+}

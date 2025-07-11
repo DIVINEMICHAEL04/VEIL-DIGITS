@@ -1,0 +1,26 @@
+.contact-us-img {
+    width: 100%;
+    background-image: url('../../assets/contact-img.jpg');
+}
+
+.contact-veildigits {
+    display: flex;
+    flex-direction: column;
+    padding: 186px 78px;
+    gap: 60px;
+}
+
+@media screen and (max-width: 768px) {
+    .contact-us-img {
+        height: 50vh;
+    }
+    .contact-veildigits {
+        padding-top: 15rem;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .contact-veildigits {
+        gap: 90px;
+    }
+}

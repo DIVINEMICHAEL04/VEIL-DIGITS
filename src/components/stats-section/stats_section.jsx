@@ -2,17 +2,13 @@ import React from 'react';
 import './stats_section.css';
 import earpiece from '../../assets/earpiece.png';
 
-function StatsSection() {
+function StatsSection({headlines, subText, mainText}) {
   return (
     <div className="stats-section">
       <div className="build-something-great">
-        <p className="launch-faster">Launch faster</p>
-        <h3 className="stats-header">Build something great</h3>
-        <p className="everything-you-need">
-          Everything you need to build modern UI and great products.
-          We’ve done all the <br className="mobile-break" />
-          heavy lifting so you don’t have to — the perfect starting point for any project.
-        </p>
+        <p className="launch-faster"> {headlines}</p>
+        <h3 className="stats-header">{subText}</h3>
+        <p className="everything-you-need">{mainText}</p>
       </div>
 
       <div className="stats-achievement">

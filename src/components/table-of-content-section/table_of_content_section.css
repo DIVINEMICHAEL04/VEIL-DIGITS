@@ -1,0 +1,183 @@
+    .table-of-content-section {
+        width: 100%;
+        height: auto;
+        display: flex;
+        padding: 100px 80px;
+        gap: 33px;
+        background-color: #FFFFFF;
+    }
+    
+    .table-of-content-container {
+        display: flex;
+        width: 100%;
+        height: auto;
+        gap: 103px;
+    }
+    
+    .left-content-container {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    
+    .top-cookie-policy {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+    
+    .cookie-policy-list {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        gap: 16px;
+    }
+    
+    .left-content-container p,
+    .cookie-policy-list li {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 145%;
+        color: #111827;
+        cursor: pointer;
+    }
+    
+    .left-content-container p {
+        display: none;
+    }
+    
+    .corrects-updates {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        gap: 14px;
+        padding-top: 16px;
+    }
+    
+    .corrects-updates ol {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+    
+    .corrects-updates li {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 145%;
+        color: #111827;
+    }
+    
+    .website-contact {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        padding-left: 30px;
+        gap: 16px;
+    }
+    
+    .website-contact p {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 145%;
+        color: #111827;
+        cursor: pointer;
+    }
+    
+    .website-contact p:hover {
+        color: #0f1521d2;
+    }
+    
+    .right-content-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        gap: 28px;
+    }
+    
+    .right-content-container-column {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        gap: 14px;
+    }
+    
+    .right-content-container-column-heading {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 145%;
+        color: #111827;
+    }
+    
+    .right-content-container-column-paragraph {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 145%;
+        color: #111827;
+    }
+    
+    .how-we-use-our-cookies {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        gap: 16px;
+    }
+    
+    .how-we-use-our-cookies-container {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        width: 100%;
+        height: auto;
+    }
+    
+    .how-we-use-our-cookies-container-heading {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 133%;
+        color: #111827;
+    }
+    
+    .how-we-use-our-cookies-container-paragraph {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 145%;
+        color: #111827;
+    }
+    
+    @media screen and (max-width: 768px) {
+        .table-of-content-container {
+            display: flex;
+            flex-direction: column;
+        }
+        .left-content-container p {
+            display: block;
+        }
+        .right-content-container-column-heading {
+            font-size: 18px;
+        }
+        .right-content-container-column-paragraph {
+            font-size: 14px;
+        }
+        .how-we-use-our-cookies-container-heading {
+            font-size: 16px;
+        }
+        .how-we-use-our-cookies-container-paragraph {
+            font-size: 14px;
+        }
+    }

@@ -31,14 +31,15 @@ function FooterSection() {
         </div>
 
         {/* Footer Links */}
-        <div className="about-veildigits">
+        <div className="about-veildigitss">
           {/* About Us Links */}
           <div className="about-us-text">
             <h4 className="about-us">About Us</h4>
+            
             <ul className="about-offers">
               <li><Link className="footer-link" to="/">Blog</Link></li>
-              <li><Link className="footer-link" to="#">Contact Us</Link></li>
-              <li><Link className="footer-link" to="#">Privacy Policy</Link></li>
+              <li><Link className="footer-link" to="/Contact">Contact Us</Link></li>
+              <li><Link className="footer-link" to="/Privacy">Privacy Policy</Link></li>
             </ul>
           </div>
 

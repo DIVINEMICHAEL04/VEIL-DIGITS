@@ -1,0 +1,81 @@
+    .team-section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .team-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        padding: 80px 78px;
+        gap: 44px;
+        background-color: #FAFAFA;
+    }
+    
+    .team-heading-text {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        width: 100%;
+        height: auto;
+    }
+    
+    .our-teams {
+        width: 100%;
+        font-family: "Raleway", sans-serif;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 110%;
+        text-align: center;
+        color: #111827;
+    }
+    
+    .team-paragraph {
+        width: 100%;
+        font-family: "Rethink Sans", sans-serif;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 140%;
+        text-align: center;
+        color: #4B5563;
+    }
+    
+    .team-img {
+        display: flex;
+        gap: 32px;
+        width: 100%;
+    }
+    
+    .team-developers-img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .team-developers-img img {
+        width: 100%;
+    }
+    
+    @media screen and (max-width: 768px) {
+        .our-teams {
+            font-size: 24px;
+        }
+        .team-paragraph {
+            font-size: 16px;
+        }
+        .team-leave {
+            display: none;
+        }
+        .team-img {
+            gap: 12px;
+        }
+    }
+    
+    @media screen and (max-width: 500px) {
+        .team-container {
+            padding: 80px 20px;
+        }
+    }

@@ -22,7 +22,13 @@ function Home() {
 </>} 
         info={<>confidence, no matter where life takes you.</>}/>
        <FeaturesGridSection/>
-       <StatsSection/>
+       <StatsSection 
+       headlines={<>Launch faster</>}
+       subText={<>Build something great</>}
+       mainText={<> Everything you need to build modern UI and great products.
+          We’ve done all the <br className="mobile-break" />
+          heavy lifting so you don’t have to — the perfect starting point for any project.</>}
+       />
        <CallToActionSection/>
        <FooterSection/>
     </div>
