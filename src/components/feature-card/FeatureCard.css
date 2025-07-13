@@ -1,390 +1,353 @@
-/* Global Reset */
-
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-
-/* Feature Card Styling */
-
-.feature-card {
-    background: linear-gradient(to bottom, #FFFFFF 30%, #3A8E63, #6DB48F);
-    width: 100%;
-    height: auto;
-}
-
-
-/* Section Base Styling */
-
-.section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 4px;
-}
-
-
-/* Hero Section */
-
-.top-hero-section {
-    display: flex;
-    flex-direction: column;
-    gap: 22px;
-    margin-top: 60px;
-}
-
-
-/* "Veil Your Digits" Container */
-
-.veil-your-digits {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-
-/* Heading Text Styles */
-
-.heading-texts {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 600;
-    font-size: 52px;
-    line-height: 120%;
-    letter-spacing: -2%;
-    text-align: center;
-    color: #0F281B;
-}
-
-
-/* Frame Containers */
-
-.feature-frame {
-    width: 100%;
-    height: auto;
-}
-
-.sub-hero-frame {
-    display: flex;
-    align-items: center;
-    padding: 0px 20px !important;
-}
-
-
-/* Left Frame Styling */
-
-.hero-frame-left {
-    display: flex;
-    flex-direction: column;
-    margin-top: 100px;
-    gap: 60px;
-}
-
-
-/* Frame Card Styling */
-
-.hero-frame-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 166.03px;
-    border-radius: 7.35px;
-    justify-content: space-evenly;
-    background-color: #FFFFFF;
-}
-
-
-/* Frame Text Top Section */
-
-.hero-frame-top-text {
-    display: flex;
-    flex-direction: column;
-    height: 36.9px;
-    gap: 4.9px;
-}
-
-.Action-Succesful {
-    height: 18px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 600;
-    font-size: 12.71px;
-    line-height: 145%;
-    text-align: center;
-    color: #1F2937;
-}
-
-.New-member-added {
-    font-family: 'Rethink Sans', sans-serif;
-    font-weight: 400;
-    font-size: 9.53px;
-    line-height: 145%;
-    text-align: center;
-    color: #4B5563;
-}
-
-
-/* Verification Badge Styling */
-
-.verification-badge {
-    height: 77.81px;
-}
-
-.verification-badge-img {
-    display: flex;
-    justify-content: center;
-}
-
-.verification {
-    height: 62.24px;
-    background-color: #00C84A;
-}
-
-
-/* Assurance Message */
-
-.got-you-covered {
-    display: flex;
-    flex-direction: column;
-    width: 188px;
-    height: 59px;
-    gap: 2px;
-}
-
-.assurance-text {
-    display: flex;
-    width: 188px;
-    height: 41px;
-    max-width: 275px;
-    border-radius: 12px 12px 2px 12px;
-    padding: 12px;
-    gap: 10px;
-    background: linear-gradient(to bottom, #014220, #000000);
-}
-
-.assurance-text p {
-    width: 164px;
-    height: 17px;
-    font-family: 'Rethink Sans', sans-serif;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 145%;
-    text-align: center;
-    color: #FFFFFF;
-}
-
-
-/* SIM & Chat UI */
-
-.sim {
-    display: flex;
-    justify-content: flex-end;
-    height: 16px;
-    gap: 4px;
-    align-items: center;
-}
-
-.Internet-chat,
-.time {
-    font-family: "Rethink Sans", sans-serif;
-    font-weight: 500;
-    font-size: 10px;
-    line-height: 145%;
-    color: #FFFFFF;
-}
-
-.time {
-    width: 26px;
-}
-
-span {
-    display: flex;
-    width: inherit;
-}
-
-
-/* Right Top Frame */
-
-.hero-frame-right-top {
-    display: flex;
-    flex-direction: column;
-    height: 114.68px;
-    border-radius: 8.41px;
-    border: 0.76px solid #3A8E63;
-    padding: 10.7px 13.76px;
-    gap: 75px;
-    background: linear-gradient(to bottom, #014220, #000000);
-}
-
-
-/* Green Info Container */
-
-.linear-green-background {
-    display: flex;
-    flex-direction: column;
-    height: 93.27px;
-    gap: 15.29px;
-}
-
-.green-background-top {
-    display: flex;
-    height: 47.4px;
-    gap: 9.17px;
-}
-
-.female-user {
-    width: 47.4px;
-    height: 47.4px;
-}
-
-.users-id {
-    display: flex;
-    flex-direction: column;
-    height: 34.06px;
-    gap: 5px;
-}
-
-.users-name {
-    display: flex;
-    align-items: center;
-    height: 18px;
-    gap: 4.59px;
-}
-
-.Unyime {
-    height: 18px;
-    font-family: "Rethink Sans", sans-serif;
-    font-weight: 600;
-    font-size: 12.23px;
-    line-height: 145%;
-    color: #FFFFFF;
-}
-
-.ID-call {
-    width: 27px;
-    height: 11px;
-    font-family: "Rethink Sans", sans-serif;
-    font-weight: 400;
-    font-size: 7.65px;
-    line-height: 145%;
-    color: #6DB48F;
-    padding-top: 5px;
-}
-
-.call-in-progress {
-    display: flex;
-    height: 13px;
-}
-
-.timing {
-    width: 175.08px;
-    height: 13px;
-    font-family: "Rethink Sans", sans-serif;
-    font-weight: 400;
-    font-size: 9.17px;
-    line-height: 145%;
-    color: #FFFFFF;
-}
-
-
-/* Call Icons */
-
-.call-icon {
-    display: flex;
-    height: 30.58px;
-    justify-content: space-between;
-}
-
-.microphone {
-    text-align: center;
-    width: 30.58px;
-    height: 30.58px;
-    border-radius: 76.45px;
-    padding: 7.65px;
-    gap: 7.65px;
-    background-color: #F3F4F6;
-}
-
-.red-bg {
-    background-color: #EF4444;
-}
-
-
-/* Hero Left Bottom */
-
-.hero-frame-left-bottom {
-    display: flex;
-    flex-direction: column;
-    height: 93px;
-    gap: 2px;
-}
-
-.hero-paragraph {
-    padding: 0 2px !important;
-}
-
-
-/* Message Bubble */
-
-.hero-para-text {
-    display: flex;
-    height: 75px;
-    max-width: 275px;
-    border-radius: 12px 12px 12px 2px;
-    border: 1px solid #F3F4F6;
-    padding: 12px;
-    gap: 10px;
-    background-color: #F9FAFB;
-}
-
-.hero-para-text p {
-    width: 251px;
-    height: 51px;
-    font-family: "Rethink Sans", sans-serif;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 145%;
-    color: #1F2937;
-}
-
-
-/* Message Icon Row */
-
-.msg-icon {
-    padding-top: 3px;
-    display: flex;
-    height: 16px;
-    gap: 4px;
-    align-items: center;
-}
-
-
-/* Responsive Styling */
-
-@media screen and (max-width: 1250px) {
-    .hero-frame-left,
+    /* Global Reset */
+    
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    /* Feature Card Styling */
+    
+    .feature-card {
+        background: linear-gradient(to bottom, #FFFFFF 30%, #3A8E63, #6DB48F);
+        width: 100%;
+        height: auto;
+    }
+    /* Section Base Styling */
+    
+    .section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 4px;
+        padding-top: 60px;
+    }
+    /* Hero Section */
+    
+    .top-hero-section {
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+        margin-top: 40px;
+    }
+    /* "Veil Your Digits" Container */
+    
+    .veil-your-digits {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    /* Heading Text Styles */
+    
+    .heading-texts {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 600;
+        font-size: 52px;
+        line-height: 120%;
+        letter-spacing: -2%;
+        text-align: center;
+        color: #0F281B;
+    }
+    /* Frame Containers */
+    
+    .feature-frame {
+        width: 100%;
+        height: auto;
+    }
+    
+    .sub-hero-frame {
+        display: flex;
+        align-items: center;
+        padding: 0px 20px !important;
+    }
+    /* Left Frame Styling */
+    
+    .hero-frame-left {
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+        gap: 60px;
+    }
+    /* Frame Card Styling */
+    
+    .hero-frame-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 166.03px;
+        border-radius: 7.35px;
+        justify-content: space-evenly;
+        background-color: #FFFFFF;
+    }
+    /* Frame Text Top Section */
+    
+    .hero-frame-top-text {
+        display: flex;
+        flex-direction: column;
+        height: 36.9px;
+        gap: 4.9px;
+    }
+    
+    .Action-Succesful {
+        height: 18px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 600;
+        font-size: 12.71px;
+        line-height: 145%;
+        text-align: center;
+        color: #1F2937;
+    }
+    
+    .New-member-added {
+        font-family: 'Rethink Sans', sans-serif;
+        font-weight: 400;
+        font-size: 9.53px;
+        line-height: 145%;
+        text-align: center;
+        color: #4B5563;
+    }
+    /* Verification Badge Styling */
+    
+    .verification-badge {
+        height: 77.81px;
+    }
+    
+    .verification-badge-img {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .verification {
+        height: 62.24px;
+        background-color: #00C84A;
+    }
+    /* Assurance Message */
+    
+    .got-you-covered {
+        display: flex;
+        flex-direction: column;
+        width: 188px;
+        height: 59px;
+        gap: 2px;
+    }
+    
+    .assurance-text {
+        display: flex;
+        width: 188px;
+        height: 41px;
+        max-width: 275px;
+        border-radius: 12px 12px 2px 12px;
+        padding: 12px;
+        gap: 10px;
+        background: linear-gradient(to bottom, #014220, #000000);
+    }
+    
+    .assurance-text p {
+        width: 164px;
+        height: 17px;
+        font-family: 'Rethink Sans', sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 145%;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    /* SIM & Chat UI */
+    
+    .sim {
+        display: flex;
+        justify-content: flex-end;
+        height: 16px;
+        gap: 4px;
+        align-items: center;
+    }
+    
+    .Internet-chat,
+    .time {
+        font-family: "Rethink Sans", sans-serif;
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 145%;
+        color: #FFFFFF;
+    }
+    
+    .time {
+        width: 26px;
+    }
+    
+    span {
+        display: flex;
+        width: inherit;
+    }
+    /* Right Top Frame */
+    
     .hero-frame-right-top {
-        display: none !important;
+        display: flex;
+        flex-direction: column;
+        height: 114.68px;
+        border-radius: 8.41px;
+        border: 0.76px solid #3A8E63;
+        padding: 10.7px 13.76px;
+        gap: 75px;
+        background: linear-gradient(to bottom, #014220, #000000);
     }
-}
-
-@media screen and (max-width: 700px) {
-    .auto {
-        margin: 0 auto;
+    /* Green Info Container */
+    
+    .linear-green-background {
+        display: flex;
+        flex-direction: column;
+        height: 93.27px;
+        gap: 15.29px;
     }
-}
-
-@media screen and (max-width: 375px) {
+    
+    .green-background-top {
+        display: flex;
+        height: 47.4px;
+        gap: 9.17px;
+    }
+    
+    .female-user {
+        width: 47.4px;
+        height: 47.4px;
+    }
+    
+    .users-id {
+        display: flex;
+        flex-direction: column;
+        height: 34.06px;
+        gap: 5px;
+    }
+    
+    .users-name {
+        display: flex;
+        align-items: center;
+        height: 18px;
+        gap: 4.59px;
+    }
+    
+    .Unyime {
+        height: 18px;
+        font-family: "Rethink Sans", sans-serif;
+        font-weight: 600;
+        font-size: 12.23px;
+        line-height: 145%;
+        color: #FFFFFF;
+    }
+    
+    .ID-call {
+        width: 27px;
+        height: 11px;
+        font-family: "Rethink Sans", sans-serif;
+        font-weight: 400;
+        font-size: 7.65px;
+        line-height: 145%;
+        color: #6DB48F;
+        padding-top: 5px;
+    }
+    
+    .call-in-progress {
+        display: flex;
+        height: 13px;
+    }
+    
+    .timing {
+        width: 175.08px;
+        height: 13px;
+        font-family: "Rethink Sans", sans-serif;
+        font-weight: 400;
+        font-size: 9.17px;
+        line-height: 145%;
+        color: #FFFFFF;
+    }
+    /* Call Icons */
+    
+    .call-icon {
+        display: flex;
+        height: 30.58px;
+        justify-content: space-between;
+    }
+    
+    .microphone {
+        text-align: center;
+        width: 30.58px;
+        height: 30.58px;
+        border-radius: 76.45px;
+        padding: 7.65px;
+        gap: 7.65px;
+        background-color: #F3F4F6;
+    }
+    
+    .red-bg {
+        background-color: #EF4444;
+    }
+    /* Hero Left Bottom */
+    
+    .hero-frame-left-bottom {
+        display: flex;
+        flex-direction: column;
+        height: 93px;
+        gap: 2px;
+    }
+    
     .hero-paragraph {
-        padding: 0 !important;
-        gap: 0px;
+        padding: 0 2px !important;
     }
-    .users-profile,
-    .text {
-        padding: 0px;
+    /* Message Bubble */
+    
+    .hero-para-text {
+        display: flex;
+        height: 75px;
+        max-width: 275px;
+        border-radius: 12px 12px 12px 2px;
+        border: 1px solid #F3F4F6;
+        padding: 12px;
+        gap: 10px;
+        background-color: #F9FAFB;
     }
-    .auto {
-        margin: 0 auto;
+    
+    .hero-para-text p {
+        width: 251px;
+        height: 51px;
+        font-family: "Rethink Sans", sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 145%;
+        color: #1F2937;
     }
-}
+    /* Message Icon Row */
+    
+    .msg-icon {
+        padding-top: 3px;
+        display: flex;
+        height: 16px;
+        gap: 4px;
+        align-items: center;
+    }
+    /* Responsive Styling */
+    
+    @media screen and (max-width: 1250px) {
+        .hero-frame-left,
+        .hero-frame-right-top {
+            display: none !important;
+        }
+    }
+    
+    @media screen and (max-width: 700px) {
+        .auto {
+            margin: 0 auto;
+        }
+    }
+    
+    @media screen and (max-width: 375px) {
+        .hero-paragraph {
+            padding: 0 !important;
+            gap: 0px;
+        }
+        .users-profile,
+        .text {
+            padding: 0px;
+        }
+        .auto {
+            margin: 0 auto;
+        }
+    }
