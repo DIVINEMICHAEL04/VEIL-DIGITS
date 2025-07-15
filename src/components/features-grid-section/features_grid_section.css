@@ -187,6 +187,12 @@
 }
 
 @media screen and (max-width: 768px) {
+    .heading-textt {
+        gap: 2px !important;
+    }
+    .feature-text {
+        gap: 15px !important;
+    }
     .features-section {
         flex-wrap: wrap;
         justify-content: flex-start;
