@@ -70,6 +70,7 @@ function FeatureCard() {
                 <div className="linear-green-background">
                   <div className="green-background-top">
                     <div className="female-user">
+           
                       <img src={uniyime} alt="female-user" />
                     </div>
                     <div className="users-id">
