@@ -1,103 +1,105 @@
-.core-value-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: auto;
-}
-
-.core-value-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    align-items: start;
-    padding: 100px 80px;
-    gap: 33px;
-}
-
-.core-value-heading {
-    max-width: 700px;
-    width: 100%;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 600;
-    font-size: 48px;
-    line-height: 110%;
-    color: #111827;
-}
-
-.core-value-text {
-    max-width: 862px;
-    width: 100%;
-    font-family: 'Rethink Sans', sans-serif;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 140%;
-    color: #4B5563;
-}
-
-.core-value-list {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    border-top: 1px solid #E0E0E0;
-    width: 100%;
-    height: auto;
-    /* flex-wrap: wrap; */
-}
-
-.privacy-section {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    gap: 13px;
-    padding: 24px 24px 24px 0px;
-    width: 100%;
-    height: auto;
-}
-
-.privacy-heading {
-    width: 100%;
-    font-family: 'Rethink Sans', sans-serif;
-    font-weight: 700;
-    font-size: 25px;
-    line-height: 150%;
-    color: #424D3B;
-    text-align: start;
-    align-items: start;
-}
-
-.privacy-paragraph {
-    max-width: 262.5px;
-    width: 100%;
-    font-family: 'Rethink Sans', sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 140%;
-    color: #424D3B;
-}
-
-@media screen and (max-width: 1024px) {
-    .privacy-container {
+    .core-value-section {
         display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: auto;
     }
+    
+    .core-value-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        align-items: start;
+        padding: 100px 80px;
+        gap: 33px;
+    }
+    
+    .core-value-heading {
+        max-width: 700px;
+        width: 100%;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 110%;
+        color: #111827;
+    }
+    
+    .core-value-text {
+        max-width: 862px;
+        width: 100%;
+        font-family: 'Rethink Sans', sans-serif;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 140%;
+        color: #4B5563;
+    }
+    
     .core-value-list {
         display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-items: start;
+        align-items: center;
+        gap: 12px;
+        border-top: 1px solid #E0E0E0;
+        width: 100%;
+        height: auto;
     }
-}
-
-@media screen and (max-width: 620px) {
-    .privacy-container {
+    
+    .privacy-section {
         display: flex;
         flex-direction: column;
+        align-items: start;
+        gap: 13px;
+        padding: 24px 24px 24px 0px;
+        width: 100%;
+        height: auto;
     }
-    .core-value-heading {
-        font-size: 24px;
+    
+    .privacy-heading {
+        width: 100%;
+        font-family: 'Rethink Sans', sans-serif;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 150%;
+        color: #424D3B;
+        text-align: start;
+        align-items: start;
     }
-    .core-value-text {
-        font-size: 16px;
+    
+    .privacy-paragraph {
+        max-width: 262.5px;
+        width: 100%;
+        font-family: 'Rethink Sans', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 140%;
+        color: #424D3B;
     }
-}
+    
+    @media screen and (max-width: 1024px) {
+        .privacy-container {
+            display: flex;
+        }
+        .core-value-list {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: start;
+        }
+    }
+    
+    @media screen and (max-width: 620px) {
+        .core-value-container {
+            padding: 80px 30px;
+        }
+        .privacy-container {
+            display: flex;
+            flex-direction: column;
+        }
+        .core-value-heading {
+            font-size: 24px;
+        }
+        .core-value-text {
+            font-size: 16px;
+        }
+    }

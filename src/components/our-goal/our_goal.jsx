@@ -61,7 +61,7 @@ function OurGoal() {
                         </p>
                     </div>
                     <div className="our-goal-img">
-                        <img className='our-mission-img' src={ourPromiseImg} alt="Our Promise" />
+                        <img className='our-mission-img burly-img' src={ourPromiseImg} alt="Our Promise" />
                     </div>
                 </div>
             </div>

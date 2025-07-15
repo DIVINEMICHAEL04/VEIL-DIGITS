@@ -10,7 +10,7 @@
     .feature-card {
         background: linear-gradient(to bottom, #FFFFFF 30%, #3A8E63, #6DB48F);
         width: 100%;
-        height: auto;
+        height: 884px;
     }
     /* Section Base Styling */
     
@@ -21,6 +21,7 @@
         justify-content: center;
         gap: 4px;
         padding-top: 60px;
+        height: auto;
     }
     /* Hero Section */
     
@@ -333,6 +334,9 @@
     }
     
     @media screen and (max-width: 700px) {
+        .feature-card {
+            height: auto;
+        }
         .auto {
             margin: 0 auto;
         }

@@ -63,7 +63,7 @@ function FeatureCard() {
                   </div>
                 </div>
               </div>
-
+               
               <img className="feature-frame" src={featureFrame} alt="feature-frame" />
 
               <div className="hero-frame-right-top">

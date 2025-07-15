@@ -190,6 +190,7 @@
         height: auto;
     }
     .section {
+        margin-top: 10px;
         gap: 33.61px;
     }
     .top-heroSection {

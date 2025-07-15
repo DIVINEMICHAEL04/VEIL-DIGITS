@@ -132,7 +132,7 @@
             max-width: 87px;
         }
         .our-goal-mc {
-            padding: 76px 15px 32px 15px;
+            padding: 76px 40px 32px 40px;
         }
         .our-goal-container {
             padding-bottom: 50px;
@@ -149,7 +149,14 @@
         .our-promise {
             font-size: 24px;
         }
-        .our-promise-first-paragraph {
+        .our-promise-first-paragraph,
+        .our-goal-list li {
             font-size: 14px;
+        }
+        .burly-img {
+            width: 100%;
+            height: auto;
+            max-width: 450px;
+            margin: 0 auto;
         }
     }
